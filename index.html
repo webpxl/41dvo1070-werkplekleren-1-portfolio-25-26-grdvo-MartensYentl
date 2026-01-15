@@ -1,13 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Yentl Martens - Portfolio Dashboard</title>
+
+    <!-- CSS koppelen -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<p>Yentl Martens</p>
-<p>hallo</p>
-</body>
-</html>
+
+<div class="container">
+
+    <header>
+        <div class="logo">Yentl <span>Martens</span></div>
+        <nav>
+            <button>Figma</button>
+            <button>Dashboards</button>
+        </nav>
+    </header>
+
+    <div class="main-content">
+
+        <!-- Linker kant - Skills + Projecten -->
+        <div>
+            <h1>Creatieve vaardigheden</h1>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon" style="color:#ff3366">Id</div>
+                    <div class="skill-name">Adobe InDesign</div>
+                    <div class="progress-bar"><div class="progress" data-width="50"></div></div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon" style="color:#00c4b4">F</div>
+                    <div class="skill-name">Figma</div>
+                    <div class="progress-bar"><div class="progress" data-width="65"></div></div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon" style="color:#00c8ff">Ps</div>
+                    <div class="skill-name">Adobe Photoshop</div>
+                    <div class="progress-bar"><div class="progress" data-width="70"></div></div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon" style="color:#ff3366">Ai</div>
+                    <div class="skill-name">Adobe Illustrator</div>
+                    <div class="progress-bar"><div class="progress" data-width="75"></div></div>
+                </div>
+
+                <!-- Bestaande vaardigheden blijven staan... -->
+
+                <!-- NIEUW: HTML -->
+                <div class="skill-card">
+                    <div class="skill-icon" style="color:#e34c26">HTML</div>
+                    <div class="skill-name">HTML</div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="50"></div>
+                    </div>
+                </div>
+
+                <!-- NIEUW: CSS -->
+                <div class="skill-card">
+                    <div class="skill-icon" style="color:#1572b6">CSS</div>
+                    <div class="skill-name">CSS</div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="55"></div>
+                    </div>
+                </div>
+
+                <!-- NIEUW: JavaScript -->
+                <div class="skill-card">
+                    <div class="skill-icon" style="color:#f0db4f">JS</div>
+                    <div class="skill-name">JavaScript</div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="45"></div>
+                    </div>
+                </div>
+
+                <!-- NIEUW: WebStorm (of gebruik een tekst-icoon als je geen logo hebt) -->
+                <div class="skill-card">
+                    <div class="skill-icon" style="color:#00c0ff; font-size:28px; font-weight:bold;">WS</div>
+                    <div class="skill-name">WebStorm</div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="50"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projecten sectie -->
+            <div class="projects">
+                <h1>Projecten</h1>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/600x450/1a1a1a/ffffff?text=Project+1" alt="Project 1">
+                        <div class="project-overlay">Bekijk project</div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/600x450/1a1a1a/ffffff?text=Project+2" alt="Project 2">
+                        <div class="project-overlay">Bekijk project</div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/600x450/1a1a1a/ffffff?text=Project+3" alt="Project 3">
+                        <div class="project-overlay">Bekijk project</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rechter kant - Profiel + About -->
+        <div class="right-column">
+            <img
+                    class="profile-pic"
+                    src="https://via.placeholder.com/300x300/1a1a1a/ffffff?text=Yentl+Martens"
+                    alt="Yentl Martens"
+            >
+            <div class="name">Yentl Martens</div>
+
+            <div class="about">
+                <h2>About Me</h2>
+                <p>
+                    Creatieve designer met passie voor UI/UX, branding en digitale ervaringen.<br><br>
+                    Gespecialiseerd in Adobe Creative Suite, Figma en moderne design trends.<br>
+                    Altijd op zoek naar nieuwe uitdagingen en gave samenwerkingen!
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</div>
+
+<footer>
+    <p>Contact: yentl martens</p>
+</footer>

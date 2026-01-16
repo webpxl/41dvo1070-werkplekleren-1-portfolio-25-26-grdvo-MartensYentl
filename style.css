@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+/* Skill icon */
+.skills-grid .skill-card .skill-icon{
+    font-size:22px !important;
+    font-family:'Arial Black','Arial Bold',Gadget,sans-serif;
+}
+
+/* Heading */
+.main-content > div > h1{
+    font-family:'Arial Black','Arial Bold',Gadget,sans-serif;
+    font-size:62px;
+}
+
+/* Link */
+.container nav a{
+    display:inline-block;
+    width:123px;
+    transform:translatex(1573px) translatey(-37px);
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #0f0f0f;
@@ -17,12 +36,17 @@ body {
     padding: 40px 60px;
 }
 
-header {
+.main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #0f0f0f;
+    padding: 20px 60px;
 }
+
 
 .logo {
     font-size: 28px;
@@ -38,15 +62,18 @@ nav button {
     border: 1px solid #333;
     color: white;
     padding: 10px 20px;
-    margin-left: 15px;
+    margin-left: auto;
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s;
+    text-decoration: none;
+
 }
 
 nav button:hover {
     background: #ff4d4d;
     border-color: #ff4d4d;
+    color: black;
 }
 
 h1 {
@@ -212,12 +239,110 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 1200px) {
-    .main-content {
-        grid-template-columns: 1fr;
-    }
-
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.nav-buttons {
+    display: flex;
+    gap: 15px;
 }
+
+.nav-button {
+    background: linear-gradient(145deg, #1a1a1a, #111);
+    border: 2px solid #ff4d4d;
+    color: white;
+    padding: 12px 26px;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    transition: all 0.25s ease;
+}
+
+.nav-button:hover {
+    background: #ff4d4d;
+    color: black;
+    box-shadow: 0 12px 30px rgba(255,77,77,0.35);
+}
+
+.nav-button:active {
+    box-shadow: 0 6px 15px rgba(255,77,77,0.25);
+}
+
+
+.about-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 60px;
+}
+
+
+.about-card {
+    background: #1a1a1a;
+    padding: 45px;
+    border-radius: 16px;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.6);
+}
+
+.about-card p {
+    margin-top: 20px;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.about-card h2 {
+    color: #ff4d4d;
+    margin-bottom: 18px;
+    font-size: 22px;
+    position: relative;
+}
+
+.about-card h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #ff4d4d;
+    margin-top: 8px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+    margin-left: auto; /* 🔑 DIT is de key */
+}
+
+.nav-button.active {
+    background: #ff4d4d;
+    color: black;
+}
+.container header .logo{
+    font-size:52px;
+    font-family:'Arial Black','Arial Bold',Gadget,sans-serif;
+}
+
+/* Right column */
+.container .right-column{
+    font-family:'Arial Black','Arial Bold',Gadget,sans-serif;
+    font-size:23px;
+}
+
+/* Heading */
+.main-content .projects h1{
+    font-family:'Arial Black','Arial Bold',Gadget,sans-serif;
+    font-size:66px;
+}
+

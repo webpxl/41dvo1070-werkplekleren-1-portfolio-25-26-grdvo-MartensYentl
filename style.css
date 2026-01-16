@@ -346,3 +346,14 @@ footer {
     font-size:66px;
 }
 
+/* Link */
+.container nav a{
+    padding-left:18px;
+}
+
+/* Link */
+.container nav a{
+    transform:translatex(1400px) translatey(-39px);
+    padding-right:13px;
+    padding-left:22px;
+}
